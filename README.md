@@ -1,24 +1,14 @@
-# README
+# Проектирование и разработка ОПП2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://www.figma.com/file/ORTB96NDcwRM31R8LrxntN/NSK?node-id=0%3A1
 
-Things you may want to cover:
+https://empty-nation-23e.notion.site/1c7551481610472ab04370f6c3e2cdc4?v=e7d2a3b82c494ccb913b905ca283530d
 
-* Ruby version
 
-* System dependencies
+###Web application for watch_shop
 
+* Ruby version 2.6.3
+* Rails 5.2.3
 * Configuration
-
-* Database creation
-
+* Database creation postgres
 * Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
