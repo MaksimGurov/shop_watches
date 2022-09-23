@@ -10,4 +10,5 @@ class Product < ApplicationRecord
   has_many :related, through: :related_products
 
   enum hit: { hit: 1, not_hit: 0 }
+  scope :active, -> { where(status: 1) }
 end
