@@ -23,3 +23,4 @@
 //  =require imagezoom
 //  =require jquery.flexslider
 //  =require flexs
+//  =require my
