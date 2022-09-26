@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+
+gem 'devise'
 gem 'ancestry'
 gem 'breadcrumbs_on_rails'
 gem 'meta-tags'
@@ -17,6 +19,7 @@ gem 'oj_mimic_json'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.3'
 gem 'sass-rails'
+gem 'simple_form'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 
