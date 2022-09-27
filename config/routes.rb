@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :category, only: [:show]
 
   resource :cart, only: %i[destroy show] do
-    resources :items, only: %i[destory create]
+    resources :items, only: %i[destroy create]
   end
 
   resources :search, only: [:index]
