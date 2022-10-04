@@ -90,8 +90,6 @@
                     <option>Large</option>
                     <option>Medium</option>
                     <option>small</option>
-                    <option>Large</option>
-                    <option>small</option>
                   </select></li>
                   <div class="clearfix"> </div>
                 </ul>
@@ -110,7 +108,7 @@
 
               <%=
                 link_to 'ADD TO CART',
-
+                        cart_items_path,
                         remote: true,
                         data:      { method: :post , id: @product.id },
                         class:    "add-cart item_add add-to-cart-link",

@@ -59,6 +59,15 @@
 
           <a href="/cart" onclick="getCart(); return false;">
             <div class="total">
+              <%= image_tag('cart-1.png', alt: "") %>
+              <% if cart_items.any? %>
+                <span class="simpleCart_total">
+                  <%= format("%.2f", cart_total ) %> $
+                </span>
+              <% else %>
+                <span class="simpleCart_total">Empty Cart</span>
+              <% end %>
+
             </div>
           </a>
           <div class="clearfix"> </div>

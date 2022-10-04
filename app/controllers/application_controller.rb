@@ -10,6 +10,12 @@ class ApplicationController < ActionController::Base
     current_cart.cart_items
   end
 
-  helper_method :current_cart, :cart_items
+  def cart_total
+    return 0 if cart_items.none?
+
+    cart_items.joins(:product).select('(cart_items.quantity * products.price) as total').sum { |x| x[:total] }
+  end
+
+  helper_method :current_cart, :cart_items, :cart_total
 
 end
