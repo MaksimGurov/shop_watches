@@ -13,6 +13,12 @@
     username: postgres
     port: 5432
 
+    production:
+      <<: *default
+      database: <%= ENV['DATABASE_URL'] %>
+#    username: postgres
+#    port: 5432
+
   test:
     <<: *default
     database: watches_shop_test
