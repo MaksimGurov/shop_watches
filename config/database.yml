@@ -4,15 +4,17 @@
     pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
     username: postgres
     password: 1234
-    host: dcqd880vrepo8r
+    host: localhost
     port: 5432
 
   development:
     <<: *default
     database: watches_shop_development
     username: postgres
+    port: 5432
 
   test:
     <<: *default
     database: watches_shop_test
     username: postgres
+    port: 5432
