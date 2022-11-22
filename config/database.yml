@@ -16,6 +16,7 @@
     production:
       <<: *default
       database: <%= ENV['DATABASE_URL'] %>
+      url: <%= ENV['DATABASE_URL'] %>
 #    username: postgres
 #    port: 5432
 
